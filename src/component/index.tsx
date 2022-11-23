@@ -1,17 +1,19 @@
 import React from 'react';
-
-import { HandleSCSS } from './handleSCSS';
+import ids from 'virtual:svg-icons-names';
 import tryCase from '../try';
-
-import { HandleModuleCSS } from './handleModuleCSS';
+import SVGIcon from './SVGIcon';
 
 const AllComponents = () => {
   tryCase.caseA();
 
   return (
     <>
-      <HandleSCSS />
-      <HandleModuleCSS />
+      {/*<HandleSCSS />*/}
+      {/*<HandleModuleCSS />*/}
+      {/*<ImportGlob />*/}
+      {ids.map((item: any) => (
+        <SVGIcon name={item} key={item} width="50" height="50" />
+      ))}
     </>
   );
 };

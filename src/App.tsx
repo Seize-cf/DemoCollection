@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 import AllComponents from './component';
 
-import reactLogo from './assets/react.svg';
+import reactLogo from '@assets/icons/react.svg';
+import viteLogo from '@assets/icons/vite.svg';
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://reactjs.org" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
