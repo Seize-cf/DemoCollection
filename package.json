@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "build:js": "node build.js",
+    "watch": "node watch.js"
   },
   "keywords": [],
   "author": "",

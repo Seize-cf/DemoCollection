@@ -13,6 +13,7 @@ export default {
       format: "esm",
       // 只有使用 Output 阶段相关钩子的插件才能够放到这个配置中
       // 详见 https://github.com/rollup/awesome#output
+      // 加入 terser 插件，用来压缩代码
       plugins: [terser()],
     },
     {
